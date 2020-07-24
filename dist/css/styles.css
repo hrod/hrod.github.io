@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "PlayfairDisplay";
+  font-weight: 400;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PlayfairDisplayItalic";
+  font-weight: 400;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "MulishItalic";
+  src: url("../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400; }
+
+html {
+  font-size: 16px; }
+
+h1 {
+  font-family: "PlayfairDisplayItalic", Georgia, serif;
+  font-size: 5rem; }
+
+p {
+  font-family: "Mulish", Helvetica, sans-serif;
+  font-size: 1rem; }
+
+header {
+  display: flex;
+  min-height: 85vh;
+  padding: 4em; }
+
+.hero__container {
+  background-image: url("../images/family.jpg");
+  background-size: cover;
+  min-height: 100vh; }
+
+.hero__content {
+  padding: 4em;
+  background-position: center; }

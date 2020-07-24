@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  min-height: 85vh;
+  padding: 4em;
+}
+
+.hero__container{
+  background-image: url('../images/family.jpg');
+  background-size: cover;
+  min-height: 100vh;
+}
+.hero__content {
+  padding: 4em;
+  background-position: center;
+}
