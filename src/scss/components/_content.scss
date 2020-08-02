@@ -1,0 +1,52 @@
+// Body content styles 
+
+.content__container {
+    background-color: $blush;
+    ul li {
+     margin-bottom: 0.65rem;
+
+    }
+}
+
+%copy-container {
+  padding: 3em;
+}
+
+.copy-container--light {
+  @extend %copy-container;
+  background-color: $white;
+}
+
+.copy-container--dark {
+    @extend %copy-container;
+    background-color: $forest-green;
+    color: $white;
+}
+
+.copy--left {
+    padding-right: 2em;
+}
+
+.container--featured {
+  background-image: url('../images/wolves.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+
+  blockquote {
+    font-size: 1.5rem;
+    color: $bone;
+    font-family: $header-font;
+    font-weight: 600;
+    margin-left: 50px;
+  }
+  .feature__quote {
+    padding: 1em;
+    text-align: center;
+  }
+  span.attribution {
+    @include subtitle-treatment;
+  }
+}

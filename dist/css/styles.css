@@ -9,36 +9,135 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Mulish";
-  src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf") format("truetype");
+  font-family: "PlayfairDisplaySemiBold";
+  font-weight: 600;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PlayfairDisplayBlack";
+  font-weight: 900;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MontserratLight";
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
   font-weight: 400; }
 
 @font-face {
-  font-family: "MulishItalic";
-  src: url("../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400; }
 
+@font-face {
+  font-family: "MontserratLightItalic";
+  src: url("../fonts/Montserrat/Montserrat-LightItalic.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 600; }
+
 html {
-  font-size: 16px; }
+  font-size: 18px; }
 
 h1 {
-  font-family: "PlayfairDisplayItalic", Georgia, serif;
-  font-size: 5rem; }
+  font-family: "PlayfairDisplaySemiBold", Georgia, serif;
+  font-size: 6rem;
+  color: #efe9db;
+  border-bottom: 1px solid #efe9db;
+  padding-bottom: 0.3em; }
+
+h2 {
+  font-family: "PlayfairDisplaySemiBold", Georgia, serif;
+  color: #d68162;
+  margin-bottom: 1.25rem; }
 
 p {
-  font-family: "Mulish", Helvetica, sans-serif;
-  font-size: 1rem; }
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #26272C;
+  font-size: 1rem;
+  line-height: 2rem; }
+  p.caption {
+    font-family: "PlayfairDisplayItalic", Helvetica, sans-serif;
+    color: #CE9C3C;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5em; }
+  .copy-container--dark p {
+    color: #efe9db; }
+
+ul li {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #26272C; }
+  .copy-container--dark ul li {
+    color: #efe9db; }
+
+strong {
+  font-family: "MontserratBold", Helvetica, sans-serif;
+  font-weight: 600; }
 
 header {
-  display: flex;
-  min-height: 85vh;
-  padding: 4em; }
+  background-image: url("../images/roses.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .hero__container {
-  background-image: url("../images/family.jpg");
   background-size: cover;
-  min-height: 100vh; }
+  position: relative;
+  padding: 5em 0 5em; }
 
 .hero__content {
-  padding: 4em;
-  background-position: center; }
+  text-align: center; }
+
+p.subtitle {
+  font-family: "MontserratLight", Georgia, serif;
+  color: #FAF3DD;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  margin-top: 1em; }
+
+.navbar {
+  background-color: #c3c6b1; }
+
+.content__container {
+  background-color: #eec9b7; }
+  .content__container ul li {
+    margin-bottom: 0.65rem; }
+
+.copy-container--light, .copy-container--dark {
+  padding: 3em; }
+
+.copy-container--light {
+  background-color: #FFF; }
+
+.copy-container--dark {
+  background-color: #4b553a;
+  color: #FFF; }
+
+.copy--left {
+  padding-right: 2em; }
+
+.container--featured {
+  background-image: url("../images/wolves.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px; }
+  .container--featured blockquote {
+    font-size: 1.5rem;
+    color: #efe9db;
+    font-family: "PlayfairDisplaySemiBold", Georgia, serif;
+    font-weight: 600;
+    margin-left: 50px; }
+  .container--featured .feature__quote {
+    padding: 1em;
+    text-align: center; }
+  .container--featured span.attribution {
+    font-family: "MontserratLight", Georgia, serif;
+    color: #FAF3DD;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.5rem; }

@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 @import  
- 'abstracts/variables';
+ 'abstracts/variables',
+ 'abstracts/mixins';
 
 @import 
   'base/fonts',
   'base/typography';
 
 @import   
-  'components/header';
+  'components/header',
+  'components/navigation',
+  'components/content';

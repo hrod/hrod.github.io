@@ -2,15 +2,49 @@
 // Text styles
 //------------
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1{
-  font-family: $header-text;
-  font-size: 5rem; 
+  font-family: $header-font;
+  font-size: 6rem; 
+  color: $headline-color;
+  border-bottom: 1px solid $headline-color;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-family: $header-font;
+  color: $header-color;
+  margin-bottom: 1.25rem;
 }
 
 p {
-  font-family: $body-text;
+  font-family: $body-font;
+  color: $body-color;
   font-size: 1rem;
+  line-height: 2rem;
+  &.caption {
+    font-family: $caption-font;
+    color: $caption-color;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  .copy-container--dark & {
+    color: $body-color-dark;
+  }
+}
+
+ul li {
+  font-family: $body-font;
+  color: $body-color;
+  .copy-container--dark & {
+    color: $body-color-dark;
+  }
+}
+
+strong {
+  font-family: $bold;
+  font-weight: 600;
 }

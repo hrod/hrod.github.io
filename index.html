@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Heather Rodriguez & Ben Smith</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <title>Heather Rodriguez & Ben Smith Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="dist/css/styles.css">
   <link rel="stylesheet" href="dist/css/normalize.css">
 
@@ -16,17 +17,143 @@
 
 
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
   <header>
-    <div class="hero__container">
-      <div class="hero__content">
-        <h1>Heather L. Rodriguez & Benjamin A. Smith</h1>
-      </div> 
-    </div>
+    <div class="container hero__container">
+        <div class="hero__content">
+          <div class="hero__intro">
+            <p class="subtitle">You are invited to the wedding of</p>
+          </div>
+          <div class="hero__headline">
+            <h1>Heather & Ben</h1>
+          </div>
+
+          <div class="hero__subtitle">
+            <p class="subtitle">August 14, 2020 </p>
+          </div>  
+        </div> 
+      </div>
   </header>
   
+  <div class="content__container container-fluid">
+    <section id="intro">
+      <div class="container copy-container--light">
+        <div class="row">
+          <div class="col-md-7 copy--left">
+            <h2>About Our Wedding</h2>
 
-  <p>Some text here.</p>
+            <p>A fitting tribute to the origin of our relationship, we will be getting married online.</p>
 
+            <p>From the exotic location of our backyard in Oakland, California, we will be streaming our wedding over Zoom in order to share it with you, our very special family and friends.</p>
+
+            <p>Since we sadly can’t be with you in person due to a global pandemic, we hope you will be join us to help celebrate our day, and together we will cross new frontiers in nuptial history.</p> 
+          </div>
+
+          <div class="col-md-5">
+            <div class="image--right">
+              <img class="img-fluid" alt="Ben, Heather, and baby Duncan" src="dist/images/family.jpg">
+              <p class="caption"> Ben, Heather, and Baby Duncan.
+              </p>
+            </div>
+          </div>
+        </div>  
+      </div>  
+    </section>
+
+    <section id="details">
+      <div class="container copy-container--dark">
+        <div class="row">
+          <div class="image--left col-md-5">
+              <img class="img-fluid" alt="Ben, Heather, and baby Duncan" src="dist/images/kiss.jpg">
+              <p class="caption"> Heather & Ben at a wedding in 2018.
+              </p>
+          </div>
+
+          <div class="copy--right col-md-7">
+            <h2>The Fine Print</h2>
+            
+            <p>Here are some disclaimers before we begin:</p>
+
+            <ul>
+              <li><strong>You'll need a decent internet connection to participate.</strong>  We will elaborate more on the technical recommendations below.</li>
+              <li><strong>Dress code is fancy. </strong> Of course, we can really only see from the waist up, so if you want to wear yoga pants nobody will be any the wiser. If you don't feel like getting formal, that's fine, but we figure you're looking for an excuse to dress up right about now. Want to wear a costume? Sure, we can appreciate the frivolity.</li>
+              <li><strong>This event is definitely BYOB.</strong> We could probably figure out a way to send you all drinks and food simultaneously, but we also have a nine month child and only a matter of weeks to figure this out. Next one's on us, we promise.</li>
+              <li><strong>No travel necessary.</strong> We will all be enjoying the wedding from the comforts of our own home.</li>
+            </ul>
+          </div>
+        
+        </div>  
+
+      </div> 
+    </section>
+
+    <section id="feature">
+        <div class="container container--featured">
+          <div class="feature__quote">
+              <blockquote>
+                "I would not wish <br />
+                Any companion in the world but you:<br />
+                Nor can imagination form a shape<br />
+                Besides yourself to like of."<br />
+                <br />
+                <span class="attribution">&#8211; Shakespeare, <em>The Tempest</em></span>
+              </blockquote>
+          </div>  
+        </div>
+    </section>
+
+  </div>
+
+
+    <section id="schedule" class="schedule">
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+    </section>
+  </div>  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

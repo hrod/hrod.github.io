@@ -1,15 +1,25 @@
 header {
-  display: flex;
-  min-height: 85vh;
-  padding: 4em;
+  background-image: url('../images/roses.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__container{
-  background-image: url('../images/family.jpg');
   background-size: cover;
-  min-height: 100vh;
+  position: relative; 
+  padding: 5em 0 5em;
 }
+
 .hero__content {
-  padding: 4em;
-  background-position: center;
+  text-align: center;
 }
+
+p.subtitle {
+  font-family: $subtitle-font;
+  color: $eggshell;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  margin-top: 1em;
+}
+
