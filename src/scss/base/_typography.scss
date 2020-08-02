@@ -7,10 +7,13 @@ html {
 
 h1{
   font-family: $header-font;
-  font-size: 6rem; 
   color: $headline-color;
+  font-size: 3rem;
   border-bottom: 1px solid $headline-color;
   padding-bottom: 0.3em;
+  @include media-breakpoint-up(md){
+    font-size: 6rem;
+  }
 }
 
 h2 {

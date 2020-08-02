@@ -1,15 +1,22 @@
 // Body content styles 
 
 .content__container {
+  @include media-breakpoint-up(md){  
     background-color: $blush;
-    ul li {
-     margin-bottom: 0.65rem;
+  }
 
-    }
+  ul li {
+    margin-bottom: 0.65rem;
+  }
 }
 
 %copy-container {
-  padding: 3em;
+  padding: 1em;  
+  @include media-breakpoint-up(lg){
+    padding: 3em;
+    @include make-container();
+    @include make-container-max-widths;
+  } 
 }
 
 .copy-container--light {
@@ -21,6 +28,11 @@
     @extend %copy-container;
     background-color: $forest-green;
     color: $white;
+}
+
+.copy-container--fullwidth {
+    @extend %copy-container;
+    //padding: 1em 3em;
 }
 
 .copy--left {
@@ -53,4 +65,33 @@
     padding-top: 2em;
     display: inline-block;
   }
+}
+
+.schedule__content ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding: 0.5em 0;
+}
+
+.schedule__time,
+.schedule__description {
+ display: inline-block;
+}
+
+.schedule__time {
+  color: $gold;
+  font-family: $bold;
+  @include media-breakpoint-up(lg) {
+    width: 30%;
+  }
+}
+
+.schedule__description {
+ font-family: $italic;
+}
+
+.row {
+ @include media-breakpoint-up(lg){
+  margin: 0 15px 0 15px;
+ }
 }

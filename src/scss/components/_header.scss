@@ -2,12 +2,19 @@ header {
   background-image: url('../images/roses.png');
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
 }
 
 .hero__container{
   background-size: cover;
   position: relative; 
-  padding: 5em 0 5em;
+  min-height: 300px;
+  padding: 1em;
+  @include media-breakpoint-up(lg){
+    padding: 5em 0 5em;
+    height: 500px;
+  }
+
 }
 
 .hero__content {
@@ -19,7 +26,16 @@ p.subtitle {
   color: $eggshell;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  @include media-breakpoint-up(lg){
+    font-size: 1.5rem;
+  }
   margin-top: 1em;
 }
 
+.hero__headline {
+  margin: auto;
+  @include media-breakpoint-up(md){
+    width: 80%;
+  }
+}

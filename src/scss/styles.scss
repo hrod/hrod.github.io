@@ -4,6 +4,9 @@
  'abstracts/variables',
  'abstracts/mixins';
 
+ @import 
+  "node_modules/bootstrap/scss/bootstrap";
+  
 @import 
   'base/fonts',
   'base/typography';
