@@ -28,7 +28,7 @@
 }
 
 .container--featured {
-  background-image: url('../images/wolves.jpg');
+  background-image: url('../images/wolves.JPG');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -48,5 +48,9 @@
   }
   span.attribution {
     @include subtitle-treatment;
+    font-size: 1rem;
+    font-size: 1rem;
+    padding-top: 2em;
+    display: inline-block;
   }
 }

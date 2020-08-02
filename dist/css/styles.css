@@ -120,7 +120,7 @@ p.subtitle {
   padding-right: 2em; }
 
 .container--featured {
-  background-image: url("../images/wolves.jpg");
+  background-image: url("../images/wolves.JPG");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -140,4 +140,8 @@ p.subtitle {
     color: #FAF3DD;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-size: 1rem;
+    font-size: 1rem;
+    padding-top: 2em;
+    display: inline-block; }
