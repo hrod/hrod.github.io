@@ -41,7 +41,7 @@ p, ul li {
     font-family: $caption-font;
     color: $caption-color;
     font-size: 0.75rem;
-    margin-top: 0.5em;
+    margin: 0.5em 0 2em 0;
     line-height: 1.2rem;
     @include media-breakpoint-up(md){
       font-size: 0.9rem;

@@ -1,8 +1,10 @@
 // Body content styles 
 
-.content__container {
-  ul li {
-    margin-bottom: 0.65rem;
+a {
+color: $gold;
+  &:hover {
+    color: $deep-coral;
+    text-decoration: underline;
   }
 }
 
@@ -38,19 +40,24 @@
 }
 
 .container--featured {
-    background-image: url('../images/wolves2.JPG');
+    background-image: url('../images/hawaii.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 200px;
+    padding-top: 100px;
+    @include media-breakpoint-up(xl){
+      background-image: url('../images/wolves2.JPG');
+    }
 
   blockquote {
-    font-size: 1.5rem;
     color: $bone;
     font-family: $header-font;
     font-weight: 600;
-    margin-left: 50px;
+    font-size: 1.2rem;
+    @include media-breakpoint-up(md){
+      font-size: 1.5rem;
+    }
   }
   .feature__quote {
     padding: 1em;
@@ -58,10 +65,11 @@
   }
   span.attribution {
     @include subtitle-treatment;
-    font-size: 1rem;
-    font-size: 1rem;
-    padding-top: 2em;
+    font-size: 0.9rem;
+    padding-top: 1em;
+    letter-spacing: 2px;
     display: inline-block;
+
   }
 }
 

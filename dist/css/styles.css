@@ -7237,7 +7237,7 @@ p, ul li {
     font-family: "PlayfairDisplayItalic", Helvetica, sans-serif;
     color: #CE9C3C;
     font-size: 0.75rem;
-    margin-top: 0.5em;
+    margin: 0.5em 0 2em 0;
     line-height: 1.2rem; }
     @media (min-width: 768px) {
       p.caption, ul li.caption {
@@ -7292,11 +7292,11 @@ p.subtitle {
     .hero__headline {
       width: 60%; } }
 
-.navbar {
-  background-color: #c3c6b1; }
-
-.content__container ul li {
-  margin-bottom: 0.65rem; }
+a {
+  color: #CE9C3C; }
+  a:hover {
+    color: #d68162;
+    text-decoration: underline; }
 
 .section--dark {
   background-color: #4b553a; }
@@ -7334,18 +7334,23 @@ p.subtitle {
   padding-right: 2em; }
 
 .container--featured {
-  background-image: url("../images/wolves2.JPG");
+  background-image: url("../images/hawaii.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 200px; }
+  padding-top: 100px; }
+  @media (min-width: 1200px) {
+    .container--featured {
+      background-image: url("../images/wolves2.JPG"); } }
   .container--featured blockquote {
-    font-size: 1.5rem;
     color: #efe9db;
     font-family: "PlayfairDisplaySemiBold", Georgia, serif;
     font-weight: 600;
-    margin-left: 50px; }
+    font-size: 1.2rem; }
+    @media (min-width: 768px) {
+      .container--featured blockquote {
+        font-size: 1.5rem; } }
   .container--featured .feature__quote {
     padding: 1em;
     text-align: center; }
@@ -7354,9 +7359,9 @@ p.subtitle {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 1.5rem;
-    font-size: 1rem;
-    font-size: 1rem;
-    padding-top: 2em;
+    font-size: 0.9rem;
+    padding-top: 1em;
+    letter-spacing: 2px;
     display: inline-block; }
 
 @media (min-width: 992px) {
@@ -7411,7 +7416,6 @@ footer {
   padding: 4em 0 2em 0; }
   footer p {
     color: #efe9db;
-    line-height: 1rem;
     margin-bottom: 15px; }
 
 .footer__site-info p.footer__names {
