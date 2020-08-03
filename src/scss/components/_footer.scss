@@ -1,0 +1,16 @@
+// Footer styles here 
+footer {
+  background-color: $black-coral;
+  padding: 4em 0 2em 0;
+
+  p {
+    color: $bone;
+    line-height: 1rem;
+    margin-bottom: 15px;
+  }
+}
+.footer__site-info {
+  p.footer__names {
+    font-size: 1.2rem;
+  }
+}

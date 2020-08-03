@@ -8,7 +8,7 @@ html {
 h1{
   font-family: $header-font;
   color: $headline-color;
-  font-size: 3rem;
+  font-size: 4rem;
   border-bottom: 1px solid $headline-color;
   padding-bottom: 0.3em;
   @include media-breakpoint-up(md){
@@ -19,35 +19,45 @@ h1{
 h2 {
   font-family: $header-font;
   color: $header-color;
-  margin-bottom: 1.25rem;
+  margin: 1rem 0 1.5rem;
+  font-size: 1.75rem;
+  @include media-breakpoint-up(lg){
+    margin: 0 0 1.25rem;
+  }
 }
 
-p {
+p, ul li {
   font-family: $body-font;
   color: $body-color;
-  font-size: 1rem;
-  line-height: 2rem;
+  font-size: 0.889rem;
+  line-height: 1.49rem;
+  margin-bottom: 1em;
+  @include media-breakpoint-up(lg){
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  
   &.caption {
     font-family: $caption-font;
     color: $caption-color;
-    font-size: 0.9rem;
-    text-align: center;
+    font-size: 0.75rem;
     margin-top: 0.5em;
+    line-height: 1.2rem;
+    @include media-breakpoint-up(md){
+      font-size: 0.9rem;
+    }
   }
-  .copy-container--dark & {
+  .section--dark & {
     color: $body-color-dark;
   }
 }
 
-ul li {
-  font-family: $body-font;
-  color: $body-color;
-  .copy-container--dark & {
-    color: $body-color-dark;
-  }
+.section--dark ul li {
+  color: $body-color-dark;
 }
 
 strong {
   font-family: $bold;
   font-weight: 600;
+  // color: $gold;
 }

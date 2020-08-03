@@ -1,9 +1,17 @@
 //Mixin styles for re-use
 
+//Makes sans-serif text capitalized and letter spaced
 @mixin subtitle-treatment {
   font-family: $subtitle-font;
-  color: $eggshell;
+//   color: $eggshell;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 1.5rem;
+}
+
+//Makes text more readable on desktop by constraining the width when in a fullscreen container
+@mixin constrain-text {
+  @include media-breakpoint-up(lg){
+      max-width: 90%;
+  }
 }

@@ -5,11 +5,15 @@ header {
   margin: auto;
 }
 
+.hero__intro {
+  padding: 2em 0 0;
+}
+
 .hero__container{
   background-size: cover;
   position: relative; 
   min-height: 300px;
-  padding: 1em;
+  padding: 2em;
   @include media-breakpoint-up(lg){
     padding: 5em 0 5em;
     height: 500px;
@@ -23,11 +27,12 @@ header {
 
 p.subtitle {
   font-family: $subtitle-font;
-  color: $eggshell;
+  color: $bone;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 1rem;
-  @include media-breakpoint-up(lg){
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  @include media-breakpoint-up(md){
     font-size: 1.5rem;
   }
   margin-top: 1em;
@@ -35,7 +40,7 @@ p.subtitle {
 
 .hero__headline {
   margin: auto;
-  @include media-breakpoint-up(md){
-    width: 80%;
+  @include media-breakpoint-up(xl){
+    width: 60%;
   }
 }
